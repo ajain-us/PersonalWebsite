@@ -8,32 +8,24 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    margin: 0;
+    font-family: 'Fira Code', monospace;
+    background-color: #EEEEEE;
+    color: #1D1616;
 }
 
 main {
     flex: 1;
 }
 
-body{
-    margin: 0;
-    font-family: 'Fira Code', monospace;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
 header {
-    background: #35424a;
-    color: #ffffff;
-    padding: 10px 0;
+    background: #1D1616;
+    color: #EEEEEE;
+    padding: 5px 0;
     text-align: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-}
-
-h1 {
-    margin: 0 0 0 20px;
 }
 
 .container {
@@ -43,25 +35,132 @@ h1 {
 }
 
 footer {
-    background: #35424a;
-    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    background: #1D1616;
+    color: #EEEEEE;
     text-align: center;
-    padding: 10px 0;
+    padding: 10px 0px;
     position: relative;
     bottom: 0;
     width: 100%;
+}
+
+footer a{
+    color: #EEEEEE;
+    text-decoration: none;
+}
+
+footer * {
+    margin: 5px 20px;
 }
 
 .nav-btn {
     display: inline-block;
     margin: 0 8px;
     padding: 8px 16px;
-    color: #fff;
+    color: #EEEEEE;
     text-decoration: none;
     border-radius: 4px;
     transition: color 0.2s;
 }
 
 .nav-btn:hover {
-    color: #005fa3;
+    color: #8E1616;
 }
+
+.selected{
+    color: #D84040;
+}
+
+section{
+    margin: 20px;
+}
+
+.welcome-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.hobby-main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.hobby-section {
+    border: none;
+    border-left: 10px solid #D84040;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef); 
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.hobby-section:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+.highlight-word {
+    transition: all 0.3s ease;
+    padding:0;
+    border-radius: 4px;
+}
+
+.hobby-section:hover .highlight-word {
+    font-weight: bold;
+}
+
+.welcome {
+  font-size: 10rem;
+  margin: 0 0 0 20px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  background-image: linear-gradient(
+    90deg,
+    #F7374F,
+    #88304E, 
+    #522546, 
+    #F7374F  
+  );
+  background-size: 200% auto; 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  animation: liquid-gradient 8s linear infinite;
+}
+
+@keyframes liquid-gradient {
+  to {
+    background-position: 200% center;
+  }
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    width: fit-content;
+    border-radius: 3rem;
+    margin-right: 2rem;
+}
+
+.social-links a{
+    color: #1D1616;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.social-links a:hover{
+    color: #8E1616;
+}
+
