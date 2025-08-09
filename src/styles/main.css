@@ -154,13 +154,104 @@ nav{
     margin-right: 2rem;
 }
 
-.social-links a{
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-links a {
     color: #1D1616;
     text-decoration: none;
     transition: color 0.2s;
+    display: inline-block;
+    padding: 10px;
+    transition: transform 0.2s;
 }
 
-.social-links a:hover{
+.social-links a:hover {
     color: #8E1616;
+    transform: scale(1.2);
+}
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    header p {
+        margin: 0 0 10px 0 !important;
+        font-size: 0.9rem;
+        text-align: center;
+    }
+    
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .nav-btn {
+        margin: 5px;
+        padding: 6px 12px;
+        font-size: 0.9rem;
+    }
+    
+    .welcome-section {
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .welcome {
+        font-size: 2rem;
+    }
+    
+    .social-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .social-links a {
+        margin: 5px;
+        font-size: 1.5rem;
+    }
+    
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    footer * {
+        margin: 5px 0;
+    }
+    
+    /* Make hobby grid single column on mobile */
+    .hobby-main {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+    
+    .hobby-section {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+    
+    .welcome {
+        font-size: 1.5rem;
+    }
+    
+    .nav-btn {
+        font-size: 0.8rem;
+        padding: 5px 10px;
+    }
 }
 
