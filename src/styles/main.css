@@ -184,6 +184,34 @@ nav{
     justify-content: center;
 }
 
+.about-color{
+  font-size: 10rem;
+  margin: 0 0 0 20px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  background-image: linear-gradient(
+    90deg,
+    #F7374F,
+    #88304E, 
+    #522546, 
+    #F7374F  
+  );
+  background-size: 200% auto; 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  animation: liquid-gradient 8s linear infinite;
+}
+
+.about-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 400px;
+}
+
+
 
 @media (max-width: 768px) {
     header {
