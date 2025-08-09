@@ -246,6 +246,24 @@ nav{
         letter-spacing: 2px; 
     }
     
+    /* Add mobile styles for about page */
+    .about-color {
+        font-size: 3rem !important;
+        margin: 0 !important;
+        letter-spacing: 2px !important;
+    }
+    
+    .about-section {
+        margin: 10px 20px !important; /* Much smaller margins */
+        padding: 20px;
+    }
+    
+    .about-section p {
+        font-size: 0.9rem;
+        line-height: 1.6;
+        margin-bottom: 1rem;
+    }
+    
     .social-links {
         flex-wrap: wrap;
         justify-content: center;
@@ -274,6 +292,21 @@ nav{
     
     .hobby-section {
         padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-section {
+        margin: 10px 10px !important;
+        padding: 15px;
+    }
+    
+    .about-color {
+        font-size: 2rem !important;
+    }
+    
+    .about-section p {
+        font-size: 0.85rem;
     }
 }
 

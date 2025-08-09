@@ -67,11 +67,9 @@
     transition: color 0.3s ease-in-out;
 }
 
-
 .project-card:hover .project-title {
     color: #ef4444;
 }
-
 
 .project-description {
     color: #4b5563;
@@ -92,4 +90,64 @@
     padding: 0.25rem 0.75rem;
     border-radius: 9999px;
     font-weight: 600;
+}
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+    .projects-main {
+        padding: 2rem 0.5rem;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        margin: 0 0.5rem;
+    }
+    
+    .project-card {
+        border-radius: 0.5rem;
+    }
+    
+    .project-image {
+        height: 12rem;
+    }
+    
+    .project-content {
+        padding: 1rem;
+    }
+    
+    .project-title {
+        font-size: 1.25rem;
+    }
+    
+    .project-description {
+        font-size: 0.9rem;
+    }
+    
+    .project-tags {
+        font-size: 0.75rem;
+        gap: 0.25rem;
+    }
+    
+    .project-tag {
+        padding: 0.2rem 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .projects-main {
+        padding: 1.5rem 0.25rem;
+    }
+    
+    .project-image {
+        height: 10rem;
+    }
+    
+    .project-title {
+        font-size: 1.1rem;
+    }
+    
+    .project-description {
+        font-size: 0.85rem;
+    }
 }
