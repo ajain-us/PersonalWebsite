@@ -85,38 +85,6 @@ section{
     height: 100%;
 }
 
-.hobby-main {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    padding: 20px;
-}
-
-.hobby-section {
-    border: none;
-    border-left: 10px solid #D84040;
-    border-radius: 8px;
-    padding: 20px;
-    text-align: left;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    background: linear-gradient(135deg, #f8f9fa, #e9ecef); 
-    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-}
-
-.hobby-section:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
-}
-
-.highlight-word {
-    transition: all 0.3s ease;
-    padding:0;
-    border-radius: 4px;
-}
-
-.hobby-section:hover .highlight-word {
-    font-weight: bold;
-}
-
 .welcome {
   font-size: 10rem;
   margin: 0 0 0 20px;
@@ -175,40 +143,6 @@ nav{
     transform: scale(1.2);
 }
 
-.about-header{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.about-color{
-  font-size: 10rem;
-  margin: 0 0 0 20px;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  background-image: linear-gradient(
-    90deg,
-    #F7374F,
-    #88304E, 
-    #522546, 
-    #F7374F  
-  );
-  background-size: 200% auto; 
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; 
-  animation: liquid-gradient 8s linear infinite;
-}
-
-.about-section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 10px 400px;
-}
-
 
 
 @media (max-width: 768px) {
@@ -246,24 +180,6 @@ nav{
         letter-spacing: 2px; 
     }
     
-    /* Add mobile styles for about page */
-    .about-color {
-        font-size: 3rem !important;
-        margin: 0 !important;
-        letter-spacing: 2px !important;
-    }
-    
-    .about-section {
-        margin: 10px 20px !important; /* Much smaller margins */
-        padding: 20px;
-    }
-    
-    .about-section p {
-        font-size: 0.9rem;
-        line-height: 1.6;
-        margin-bottom: 1rem;
-    }
-    
     .social-links {
         flex-wrap: wrap;
         justify-content: center;
@@ -284,29 +200,6 @@ nav{
     footer * {
         margin: 5px 0;
     }
-    
-    .hobby-main {
-        grid-template-columns: 1fr;
-        padding: 10px;
-    }
-    
-    .hobby-section {
-        padding: 15px;
-    }
 }
 
-@media (max-width: 480px) {
-    .about-section {
-        margin: 10px 10px !important;
-        padding: 15px;
-    }
-    
-    .about-color {
-        font-size: 2rem !important;
-    }
-    
-    .about-section p {
-        font-size: 0.85rem;
-    }
-}
 

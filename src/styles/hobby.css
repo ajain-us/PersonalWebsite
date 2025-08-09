@@ -1,0 +1,42 @@
+.hobby-main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.hobby-section {
+    border: none;
+    border-left: 10px solid #D84040;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef); 
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.hobby-section:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+.highlight-word {
+    transition: all 0.3s ease;
+    padding:0;
+    border-radius: 4px;
+}
+
+.hobby-section:hover .highlight-word {
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .hobby-main {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+    
+    .hobby-section {
+        padding: 15px;
+    }
+}
