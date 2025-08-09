@@ -177,7 +177,14 @@ nav{
     transform: scale(1.2);
 }
 
-/* Mobile responsive styles */
+.about-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -193,7 +200,7 @@ nav{
     nav {
         flex-wrap: wrap;
         justify-content: center;
-        margin-right: 0; /* Remove right margin on mobile */
+        margin-right: 0;
     }
     
     .nav-btn {
@@ -208,21 +215,21 @@ nav{
     }
     
     .welcome {
-        font-size: 3rem; /* Increased from 2rem */
-        margin: 0; /* Remove left margin on mobile */
-        letter-spacing: 2px; /* Reduce letter spacing */
+        font-size: 3rem; 
+        margin: 0; 
+        letter-spacing: 2px; 
     }
     
     .social-links {
         flex-wrap: wrap;
         justify-content: center;
-        gap: 20px; /* Increase gap between icons */
+        gap: 20px; 
     }
     
     .social-links a {
-        margin: 0; /* Remove margin since we're using gap */
-        font-size: 2rem; /* Larger icons for better touch targets */
-        padding: 15px; /* Larger touch area */
+        margin: 0;
+        font-size: 2rem; 
+        padding: 15px;
     }
     
     footer {
