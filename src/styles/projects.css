@@ -8,7 +8,7 @@
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    grid-template-columns: repeat(3, minmax(280px, 1fr)); 
     gap: 2rem;
 }
 
@@ -48,7 +48,7 @@
     inset: 0;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
-    background-color: #ef4444;
+    background-color: #D84040;
 }
 
 .project-card:hover .project-overlay {
@@ -63,16 +63,16 @@
     font-size: 1.5rem; 
     font-weight: 700;
     margin-bottom: 0.5rem;
-    color: #1f2937;
+    color: #1D1616;
     transition: color 0.3s ease-in-out;
 }
 
 .project-card:hover .project-title {
-    color: #ef4444;
+    color: #D84040;
 }
 
 .project-description {
-    color: #4b5563;
+    color: #1D1616;
     margin-bottom: 1rem;
     font-size: 1rem;
 }
@@ -86,7 +86,7 @@
 
 .project-tag {
     background-color: #e5e7eb;
-    color: #4b5563;
+    color: #1D1616;
     padding: 0.25rem 0.75rem;
     border-radius: 9999px;
     font-weight: 600;
