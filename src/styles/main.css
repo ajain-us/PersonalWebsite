@@ -77,6 +77,12 @@ section{
     margin: 20px;
 }
 
+section p{
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
 .welcome-section {
     display: flex;
     flex-direction: column;
@@ -131,6 +137,7 @@ nav{
 
 .social-links a {
     color: #1D1616;
+    font-size: 2rem;
     text-decoration: none;
     transition: color 0.2s;
     display: inline-block;
@@ -175,9 +182,13 @@ nav{
     }
     
     .welcome {
-        font-size: 3rem; 
+        font-size: 4rem; 
         margin: 0; 
         letter-spacing: 2px; 
+    }
+
+    section p{
+        font-size: 1rem;
     }
     
     .social-links {
