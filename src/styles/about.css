@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .about-color{
@@ -31,11 +32,89 @@
 }
 
 .about-section{
+    max-width: 900px;
+    margin: 10px auto;
+    padding: 0 2rem;
+    box-sizing: border-box;
+}
+
+.about-section-wide {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 2rem;
+    box-sizing: border-box;
+}
+
+.section-heading {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin: 0 0 1rem 0;
+    color: #1D1616;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.info-grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.skill-tags {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.6rem;
     justify-content: center;
-    margin: 10px 400px;
+}
+
+.info-card {
+    border-left: 10px solid #D84040;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.info-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+.info-card-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.info-card-header h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.info-card-date {
+    font-size: 0.85rem;
+    color: #8E1616;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.info-card-sub {
+    font-style: italic;
+    margin: 4px 0 10px 0 !important;
+}
+
+.info-card p {
+    font-size: 1rem !important;
+    margin: 0 0 8px 0 !important;
+}
+
+.info-card p:last-child {
+    margin-bottom: 0 !important;
 }
 
 @media (max-width: 768px) {
@@ -44,16 +123,25 @@
         margin: 0 !important;
         letter-spacing: 2px !important;
     }
-    
+
     .about-section {
         margin: 10px 20px !important;
         padding: 20px;
     }
-    
+
     .about-section p {
         font-size: 0.9rem;
         line-height: 1.6;
         margin-bottom: 1rem;
+    }
+
+    .about-section-wide {
+        margin: 20px 10px !important;
+        padding: 0 1rem;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -62,12 +150,21 @@
         margin: 10px 10px !important;
         padding: 15px;
     }
-    
+
     .about-color {
         font-size: 2rem !important;
     }
-    
+
     .about-section p {
         font-size: 0.85rem;
+    }
+
+    .about-section-wide {
+        margin: 15px 5px !important;
+        padding: 0 0.75rem;
+    }
+
+    .info-card {
+        padding: 15px;
     }
 }

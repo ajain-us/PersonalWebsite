@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AJ</title>
-    <link rel="icon" type="image/x-icon" href=".assets/favicon.ico">
+    <title>Projects | Aditya Jain</title>
+    <meta name="description" content="A showcase of Aditya Jain's software projects, from computer vision to full-stack web apps.">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/projects.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,7 +15,7 @@
 </head>
 <body>
     <header>
-        <p style="margin-left: 2rem" class="quote">You cannot always be the best. But you can do your best.</p>
+        <p style="margin-left: 2rem" class="quote">&ldquo;You cannot always be the best. But you can do your best.&rdquo; <span class="quote-author">&mdash; Sebastian Vettel</span></p>
         <nav>
             <a href="index.html" class="nav-btn">Home</a>
             <a href="about.html" class="nav-btn">About</a>
@@ -23,14 +24,45 @@
         </nav>
     </header>
     <main class="projects-main">
+        <h1 class="projects-heading">Projects</h1>
         <div class="projects-grid">
-
-            <a href="https://github.com/ajain-us" class="project-card">
-                <div class="project-card-image-container">
-                    <img src="https://placehold.co/600x400/D84040/ffffff?text=Panorama+Maker" alt="Panorama Maker" class="project-image">
-                    <div class="project-overlay"></div>
-                </div>
+            <div class="project-card project-card-static reveal">
                 <div class="project-content">
+                    <span class="project-icon"><i class="fa-brands fa-rust"></i></span>
+                    <h2 class="project-title">BitTorrent Client</h2>
+                    <p class="project-description">
+                        Built a BitTorrent client from scratch in Rust for my Computer Networks course, hand-coding tracker
+                        communication and peer wire protocol to interoperate with official clients like Transmission and qBittorrent.
+                        Implemented UDP trackers, multi-file mode, a rarest-first piece strategy, and endgame mode, and benchmarked
+                        download performance against the reference client.
+                    </p>
+                    <div class="project-tags">
+                        <span class="project-tag">Rust</span>
+                        <span class="project-tag">Networking</span>
+                        <span class="project-tag">UDP</span>
+                    </div>
+                </div>
+            </div>
+
+            <a href="https://github.com/ajain-us/LiveCaptioningDemo" class="project-card reveal">
+                <div class="project-content">
+                    <span class="project-icon"><i class="fa-solid fa-microphone"></i></span>
+                    <h2 class="project-title">AI Live Captioning</h2>
+                    <p class="project-description">
+                        Built a real-time captioning system streaming mic audio through OpenAI Whisper at 80% transcription accuracy.
+                        Overlapped capture with inference via Python multiprocessing to hold latency stable across long utterances.
+                    </p>
+                    <div class="project-tags">
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">OpenAI Whisper</span>
+                        <span class="project-tag">Multiprocessing</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://github.com/ajain-us" class="project-card reveal">
+                <div class="project-content">
+                    <span class="project-icon"><i class="fa-brands fa-python"></i></span>
                     <h2 class="project-title">Panorama Maker</h2>
                     <p class="project-description">
                         This is a project I worked on for my Computer Vision course. The primary goal was to create an algorithm that creates panoramas.
@@ -45,16 +77,46 @@
                 </div>
             </a>
 
-
-
-
-
-            <a href="https://github.com/Matthew-Maher/GDSC2025" class="project-card">
-                <div class="project-card-image-container">
-                    <img src="https://placehold.co/600x400/D84040/ffffff?text=Smart+Calender" alt="Smart Calendar" class="project-image">
-                    <div class="project-overlay"></div>
-                </div>
+            <a href="https://github.com/ajain-us/NetflixSummaryExtensionWT" class="project-card reveal">
                 <div class="project-content">
+                    <span class="project-icon"><i class="fa-brands fa-google"></i></span>
+                    <h2 class="project-title">Netflix Summary Extension</h2>
+                    <p class="project-description">
+                        Shipped a Chrome extension to the Web Store summarizing any Netflix title, reaching 10+ active users.
+                        Engineered prompting against Gemini 2.5 to produce spoiler-aware summaries consistent across genres and runtimes.
+                    </p>
+                    <div class="project-tags">
+                        <span class="project-tag">HTML</span>
+                        <span class="project-tag">CSS</span>
+                        <span class="project-tag">JavaScript</span>
+                        <span class="project-tag">Gemini 2.5</span>
+                        <span class="project-tag">Chrome Extensions API</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://github.com/ajain-us/CMSC320-Final-Project" class="project-card reveal">
+                <div class="project-content">
+                    <span class="project-icon"><i class="fa-solid fa-chart-line"></i></span>
+                    <h2 class="project-title">CMSC320 Final Project</h2>
+                    <p class="project-description">
+                        This was a group project for my Data Science class. We created an indepth
+                        analysis of heart attacks using various machine learning techniques. I primarily worked on
+                        the Introduction, Exploratory Data Analysis and Conclusion.
+                    </p>
+                    <div class="project-tags">
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">Scikit Learn</span>
+                        <span class="project-tag">Pandas</span>
+                        <span class="project-tag">NumPy</span>
+                        <span class="project-tag">Matplotlib</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://github.com/Matthew-Maher/GDSC2025" class="project-card reveal">
+                <div class="project-content">
+                    <span class="project-icon"><i class="fa-brands fa-node-js"></i></span>
                     <h2 class="project-title">Smart Calendar</h2>
                     <p class="project-description">
                         This is the hackathon project I worked on during the Gemini Hack Night at the University of Maryland. It is a smart planner that 
@@ -71,54 +133,27 @@
                 </div>
             </a>
 
-
-
-
-            <a href="https://github.com/ajain-us/PersonalWebsite" class="project-card">
-                <div class="project-card-image-container">
-                    <img src="https://placehold.co/600x400/D84040/ffffff?text=Personal+Website" alt="Personal Website" class="project-image">
-                    <div class="project-overlay"></div>
-                </div>
+            <a href="https://github.com/ajain-us/MovieTracker" class="project-card reveal">
                 <div class="project-content">
-                    <h2 class="project-title">Personal Website</h2>
+                    <span class="project-icon"><i class="fa-solid fa-film"></i></span>
+                    <h2 class="project-title">Movie Tracker</h2>
                     <p class="project-description">
-                        This is my personal website, built using HTML and CSS. It showcases
-                        my skills, projects, and hobbies. It also shows my ability to create
-                        a responsive and visually appealing design.
+                        This was a python application I made using PyQt6, Azure cloud and SQL. It served as a basic
+                        tracker for movies and tv shows, allowing users to add, remove and update their watched movies and shows, 
+                        ratings and progress. It was one of my first projects where I used a database to store and retrieve data.
                     </p>
                     <div class="project-tags">
-                        <span class="project-tag">HTML</span>
-                        <span class="project-tag">CSS</span>
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">PyQt6</span>
+                        <span class="project-tag">SQL</span>
+                         <span class="project-tag">Azure</span>
                     </div>
                 </div>
             </a>
 
-            <a href="https://github.com/ajain-us/NetflixSummaryExtensionWT" class="project-card">
-                <div class="project-card-image-container">
-                    <img src="https://placehold.co/600x400/D84040/ffffff?text=Netflix+Summary+Extension" alt="Netflix Summary Extension" class="project-image">
-                    <div class="project-overlay"></div>
-                </div>
+            <a href="https://github.com/Matthew-Maher/DogBreedGame" class="project-card reveal">
                 <div class="project-content">
-                    <h2 class="project-title">Netflix Summary Extension</h2>
-                    <p class="project-description">
-                        I created this extension to enhance the Netflix experience by providing summaries and reviews
-                        on TV shows and movies. It was completed during a hackathon in a group of two. 
-                    </p>
-                    <div class="project-tags">
-                        <span class="project-tag">HTML</span>
-                        <span class="project-tag">CSS</span>
-                        <span class="project-tag">JavaScript</span>
-                        <span class="project-tag">Gemini</span>
-                    </div>
-                </div>
-            </a>
-
-            <a href="https://github.com/Matthew-Maher/DogBreedGame" class="project-card">
-                <div class="project-card-image-container">
-                    <img src="https://placehold.co/600x400/D84040/ffffff?text=Dog+Breed+Game" alt="Dog Breed Game" class="project-image">
-                    <div class="project-overlay"></div>
-                </div>
-                <div class="project-content">
+                    <span class="project-icon"><i class="fa-solid fa-dog"></i></span>
                     <h2 class="project-title">Dog Breed Game</h2>
                     <p class="project-description">
                         This was a website I created for my final project in CMSC335. 
@@ -136,52 +171,24 @@
                 </div>
             </a>
 
-            <a href="https://github.com/ajain-us/CMSC320-Final-Project" class="project-card">
-                <div class="project-card-image-container">
-                    <img src="https://placehold.co/600x400/D84040/ffffff?text=CMSC320+Final+Project" alt="CMSC320 Final Project" class="project-image">
-                    <div class="project-overlay"></div>
-                </div>
+            <a href="https://github.com/ajain-us/Video-Game-Mania" class="project-card reveal">
                 <div class="project-content">
-                    <h2 class="project-title">CMSC320 Final Project</h2>
+                    <span class="project-icon"><i class="fa-solid fa-gamepad"></i></span>
+                    <h2 class="project-title">Video Game Mania</h2>
                     <p class="project-description">
-                        This was a group project for my Data Science class. We created an indepth
-                        analysis of heart attacks using various machine learning techniques. I primarily worked on
-                        the Introduction, Exploratory Data Analysis and Conclusion.
+                        Developed a browser game in Unity and C# with a core game loop, state management, and collision handling,
+                        deployed to WebGL for 10+ players.
                     </p>
                     <div class="project-tags">
-                        <span class="project-tag">Python</span>
-                        <span class="project-tag">Scikit Learn</span>
-                        <span class="project-tag">Pandas</span>
-                        <span class="project-tag">NumPy</span>
-                        <span class="project-tag">Matplotlib</span>
+                        <span class="project-tag">Unity</span>
+                        <span class="project-tag">C#</span>
                     </div>
                 </div>
             </a>
 
-            <a href="https://github.com/ajain-us/todolist" class="project-card">
-                <div class="project-card-image-container">
-                    <img src="https://placehold.co/600x400/D84040/ffffff?text=Todo+List" alt="ToDo List" class="project-image">
-                    <div class="project-overlay"></div>
-                </div>
+            <a href="https://github.com/ajain-us/DrawingWebsite" class="project-card reveal">
                 <div class="project-content">
-                    <h2 class="project-title">ToDo List</h2>
-                    <p class="project-description">
-                        This is a simple todo list that I created for mobile devices.
-                    </p>
-                    <div class="project-tags">
-                        <span class="project-tag">ReactNative</span>
-                        <span class="project-tag">JavaScript</span>
-                        <span class="project-tag">NodeJs</span>
-                    </div>
-                </div>
-            </a>
-
-            <a href="https://github.com/ajain-us/DrawingWebsite" class="project-card">
-                <div class="project-card-image-container">
-                    <img src="https://placehold.co/600x400/D84040/ffffff?text=Drawing+Website" alt="Drawing Website" class="project-image">
-                    <div class="project-overlay"></div>
-                </div>
-                <div class="project-content">
+                    <span class="project-icon"><i class="fa-solid fa-paintbrush"></i></span>
                     <h2 class="project-title">Drawing Website</h2>
                     <p class="project-description">
                         This is a simple react drawing website where users can draw on a canvas using text and boxes.
@@ -196,72 +203,44 @@
                 </div>
             </a>
 
-            <a href="https://github.com/ajain-us/LiveCaptioningDemo" class="project-card">
-                <div class="project-card-image-container">
-                    <img src="https://placehold.co/600x400/D84040/ffffff?text=Live+Captioning+Demo" alt="Live Captioning Demo" class="project-image">
-                    <div class="project-overlay"></div>
-                </div>
+            <a href="https://github.com/ajain-us/todolist" class="project-card reveal">
                 <div class="project-content">
-                    <h2 class="project-title">Live Captioning Demo</h2>
+                    <span class="project-icon"><i class="fa-brands fa-react"></i></span>
+                    <h2 class="project-title">ToDo List</h2>
                     <p class="project-description">
-                        This is a simple python script that uses OpenAi's Whisper API to transcribe audio from a microphone in real-time.
-                        I also relied on the speech recognition library to enhance the transcription accuracy and reduce errors.
-                        In the end, I was able to capture most spoken audio while the script was running.
+                        This is a simple todo list that I created for mobile devices.
                     </p>
                     <div class="project-tags">
-                        <span class="project-tag">Python</span>
-                        <span class="project-tag">Whisper</span>
-                        <span class="project-tag">Speech Recognition</span>
+                        <span class="project-tag">ReactNative</span>
+                        <span class="project-tag">JavaScript</span>
+                        <span class="project-tag">NodeJs</span>
                     </div>
                 </div>
             </a>
 
-            <a href="https://github.com/ajain-us/MovieTracker" class="project-card">
-                <div class="project-card-image-container">
-                    <img src="https://placehold.co/600x400/D84040/ffffff?text=Movie+Tracker" alt="Movie Tracker" class="project-image">
-                    <div class="project-overlay"></div>
-                </div>
+            <a href="https://github.com/ajain-us/PersonalWebsite" class="project-card reveal">
                 <div class="project-content">
-                    <h2 class="project-title">Movie Tracker</h2>
+                    <span class="project-icon"><i class="fa-brands fa-html5"></i></span>
+                    <h2 class="project-title">Personal Website</h2>
                     <p class="project-description">
-                        This was a python application I made using PyQt6, Azure cloud and SQL. It served as a basic
-                        tracker for movies and tv shows, allowing users to add, remove and update their watched movies and shows, 
-                        ratings and progress. It was one of my first projects where I used a database to store and retrieve data.
+                        This is my personal website, built using HTML and CSS. It showcases
+                        my skills, projects, and hobbies. It also shows my ability to create
+                        a responsive and visually appealing design.
                     </p>
                     <div class="project-tags">
-                        <span class="project-tag">Python</span>
-                        <span class="project-tag">PyQt6</span>
-                        <span class="project-tag">SQL</span>
-                         <span class="project-tag">Azure</span>
+                        <span class="project-tag">HTML</span>
+                        <span class="project-tag">CSS</span>
                     </div>
                 </div>
             </a>
-
-            <a href="https://github.com/ajain-us/Video-Game-Mania" class="project-card">
-                <div class="project-card-image-container">
-                    <img src="https://placehold.co/600x400/D84040/ffffff?text=Video+Game+Mania" alt="Video Game Mania" class="project-image">
-                    <div class="project-overlay"></div>
                 </div>
-                <div class="project-content">
-                    <h2 class="project-title">Video Game Mania</h2>
-                    <p class="project-description">
-                        This is a unity project that I made in highschool.
-                        It is a video game where you have to escape an arcade after playing
-                        a series of challenging older games like tetris and asteroids.
-                    </p>
-                    <div class="project-tags">
-                        <span class="project-tag">Unity</span>
-                        <span class="project-tag">C#</span>
-                    </div>
-                </div>
-            </a>
-        </div>
     </main>
     <footer>
-        <p>&copy; 2025 Aditya Jain</p>
+        <p>&copy; 2026 Aditya Jain</p>
         
-        <em><p>Last updated August 2025</p></em>
+        <em><p>Last updated August 2026</p></em>
     </footer>
     <script src="scripts/quotes.js" defer></script>
+    <script src="scripts/reveal.js" defer></script>
 </body>
 </html>

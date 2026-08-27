@@ -7,10 +7,19 @@ This is a simple static personal [website](https://www.adityajain.us/) project.
 ```
 personal-website
 ├── src
-│   ├── index.html        # Main HTML document for the website
-│   ├── styles
-│   │   └── main.css      # CSS styles for the website
-└── README.md             # Documentation for the project
+│   ├── index.html         # Home page
+│   ├── about.html         # About / education / experience
+│   ├── projects.html      # Project showcase
+│   ├── hobbies.html       # Hobbies
+│   ├── assets/            # Favicon, resume, etc.
+│   ├── styles/
+│   │   ├── main.css       # Shared layout (header, nav, footer)
+│   │   ├── about.css      # About page styles
+│   │   ├── hobby.css      # Hobbies page styles
+│   │   └── projects.css   # Projects page styles
+│   └── scripts/
+│       └── quotes.js      # Random header quote
+└── README.md              # Documentation for the project
 ```
 
 ## Contributing

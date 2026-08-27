@@ -1,14 +1,21 @@
 const quotes = [
-    'You cannot always be the best. But you can do your best.', //Vettel
-    'If you don\'t take risks, you can\'t create a future.', //Luffy
-    'The world\'s not perfect, but it\'s there for us, trying the best it can. That\'s what makes it so beautiful. ', //Roy Mustang, FMAB
-    'Set your heart ablaze.', //Rengoku, demon slayer
-    'Closing your mind to the prospect of failure will only ensure your defeat.', //Master Roshi, Dragon Ball
-    'There are always things you can learn, every single day. There is always space for improvement.', //Lewis Hamilton
-    'We evolve beyond the person that we were a minute before.', //Simon, Gurren Lagan
-    'No one can gain without sacrificing something.',  //Ewdward Elric, FMAB
-    'Move well, study well, play well, eat well, rest well!' //Master Roshi, Dragon Ball
-]
+    { text: 'You cannot always be the best. But you can do your best.', author: 'Sebastian Vettel' },
+    { text: 'There are always things you can learn, every single day. There is always space for improvement.', author: 'Lewis Hamilton' },
+    { text: "I have not failed. I've just found 10,000 ways that won't work.", author: 'Thomas Edison' },
+    { text: 'The most dangerous phrase in the language is, "We\'ve always done it this way."', author: 'Grace Hopper' },
+    { text: 'The first principle is that you must not fool yourself — and you are the easiest person to fool.', author: 'Richard Feynman' },
+    { text: "You miss 100% of the shots you don't take.", author: 'Wayne Gretzky' },
+    { text: "I've failed over and over and over again in my life, and that is why I succeed.", author: 'Michael Jordan' },
+    { text: 'Nothing in life is to be feared, it is only to be understood.', author: 'Marie Curie' },
+];
 
-const quote = quotes[Math.floor(Math.random() * quotes.length)]
-document.getElementsByClassName("quote")[0].textContent = quote;
+const quote = quotes[Math.floor(Math.random() * quotes.length)];
+const quoteEl = document.getElementsByClassName('quote')[0];
+
+quoteEl.textContent = '';
+quoteEl.append(`“${quote.text}” `);
+
+const authorEl = document.createElement('span');
+authorEl.className = 'quote-author';
+authorEl.textContent = `— ${quote.author}`;
+quoteEl.appendChild(authorEl);

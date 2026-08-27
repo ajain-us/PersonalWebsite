@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AJ</title>
-    <link rel="icon" type="image/x-icon" href=".assets/favicon.ico">
+    <title>About | Aditya Jain</title>
+    <meta name="description" content="About Aditya Jain — education, experience, and interests in AI and software engineering.">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/about.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,7 +15,7 @@
 </head>
 <body>
     <header>
-        <p style="margin-left: 2rem" class="quote">You cannot always be the best. But you can do your best.</p>
+        <p style="margin-left: 2rem" class="quote">&ldquo;You cannot always be the best. But you can do your best.&rdquo; <span class="quote-author">&mdash; Sebastian Vettel</span></p>
         <nav>
             <a href="index.html" class="nav-btn">Home</a>
             <a href="about.html" class="nav-btn selected">About</a>
@@ -28,14 +29,88 @@
         </section>
 
 
-        <section class="about-section">
+        <section class="about-section reveal">
             <p>
-                Hi, thank you for visiting my website. My name is Aditya Jain. I am currently a student at the
-                University of Maryland, College Park, majoring in Computer Science and Mathematics. I just
-                recently completed a summer internship at SanasInvite, where I worked as a full stack web developer! 
-                I’ve always enjoyed experimenting with new technologies, whether it’s exploring emerging programming 
-                languages or digging into frameworks that power modern software systems.
+                Hi, thank you for visiting my website. My name is Aditya Jain. I recently graduated from the University of
+                Maryland, College Park with a degree in Computer Science and Mathematics, and I'm now pursuing a one-year
+                Master's in Computer Science, also at UMD. I've always enjoyed experimenting with new technologies,
+                whether it's exploring emerging programming languages or digging into frameworks that power modern
+                software systems.
             </p>
+        </section>
+
+        <section class="about-section about-section-wide reveal">
+            <h2 class="section-heading">Education</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <div class="info-card-header">
+                        <h3>M.S. in Computer Science</h3>
+                        <span class="info-card-date">Expected May 2027</span>
+                    </div>
+                    <p class="info-card-sub">University of Maryland, College Park &middot; GPA 4.0/4.0</p>
+                    <p>Researching Artificial Intelligence and Machine Learning under Professor Pratap Tokekar. Coursework includes Natural Language Processing, Multimodal Foundation Models, Domain-Specific Architectures, and a Capstone in Machine Learning.</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-card-header">
+                        <h3>B.S. in Computer Science &amp; Mathematics</h3>
+                        <span class="info-card-date">2023 &ndash; 2026</span>
+                    </div>
+                    <p class="info-card-sub">University of Maryland, College Park &middot; GPA 3.9/4.0</p>
+                    <p>Double major covering the theoretical foundations of mathematics and the practical, systems side of computer science. Active in Bitcamp, Google Developer Club, AWS Club, Competitive Programming Club, and Sim Racing Club.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section about-section-wide reveal">
+            <h2 class="section-heading">Experience</h2>
+            <div class="info-grid info-grid-3">
+                <div class="info-card">
+                    <div class="info-card-header">
+                        <h3>Business Applications Intern</h3>
+                        <span class="info-card-date">May 2026 &ndash; Present</span>
+                    </div>
+                    <p class="info-card-sub"><span class="highlight-word">Venerable</span> &middot; West Chester, PA</p>
+                    <p>Architected an LLM pipeline on AWS Bedrock where an orchestrator agent routes requests to specialized, RAG-powered subagents grounded in 100+ internal documents &mdash; cutting script turnaround from weeks to minutes.</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-card-header">
+                        <h3>AI Fellow</h3>
+                        <span class="info-card-date">Dec 2025 &ndash; Jun 2026</span>
+                    </div>
+                    <p class="info-card-sub"><span class="highlight-word">Handshake AI</span> &middot; Remote</p>
+                    <p>Trained and evaluated LLMs on real-world codebases, authoring expert-graded reasoning traces and reference solutions in Python and Java to improve code generation quality.</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-card-header">
+                        <h3>Software Engineering Intern</h3>
+                        <span class="info-card-date">May 2025 &ndash; Aug 2025</span>
+                    </div>
+                    <p class="info-card-sub"><span class="highlight-word">Sanas Invite</span> &middot; Remote</p>
+                    <p>Rebuilt a legacy React app into modular components, migrated 1,000+ records from SQL to MongoDB, and automated CI/CD deployment on Google Cloud Platform.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section about-section-wide reveal">
+            <h2 class="section-heading">Skills</h2>
+            <div class="skill-tags">
+                <span class="project-tag">Python</span>
+                <span class="project-tag">Java</span>
+                <span class="project-tag">C / C++</span>
+                <span class="project-tag">Rust</span>
+                <span class="project-tag">TypeScript</span>
+                <span class="project-tag">React</span>
+                <span class="project-tag">Node.js</span>
+                <span class="project-tag">Docker</span>
+                <span class="project-tag">AWS</span>
+                <span class="project-tag">GCP</span>
+                <span class="project-tag">RAG</span>
+                <span class="project-tag">LLM Evaluation</span>
+                <span class="project-tag">Distributed Systems</span>
+            </div>
+        </section>
+
+        <section class="about-section reveal">
             <p>
                 Right now I am exploring Artificial Intelligence, CUDA Programming, and Web Development. Specifically,
                 I want to learn low-level programming and understand complex AI systems. I also hope to join a research
@@ -43,21 +118,23 @@
             </p>
             <p>
                 In my free time, I enjoy working on personal projects, watching motorsports, and playing video games. There is
-                more information about my hobbies on the <a href="hobbies.html">Hobbies</a> page. 
+                more information about my hobbies on the <a href="hobbies.html">Hobbies</a> page.
             </p>
             <p>
                 If you want to contact me, you can find my social media and email on the home page.
                 If you're interested in my resume, you can find it <a href="./assets/AdityaJainResume.pdf" target="_blank">here</a>. I am always open to
-                collaboration and I hope to hear from you! 
+                collaboration and I hope to hear from you!
+            </p>
         </section>
 
     </main>
     <footer>
-        <p>&copy; 2025 Aditya Jain</p>
+        <p>&copy; 2026 Aditya Jain</p>
         
-        <em><p>Last updated August 2025</p></em>
+        <em><p>Last updated August 2026</p></em>
     </footer>
 
     <script src="scripts/quotes.js" defer></script>
+    <script src="scripts/reveal.js" defer></script>
 </body>
 </html>
